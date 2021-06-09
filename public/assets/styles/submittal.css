@@ -1,0 +1,399 @@
+ul.nav.nav-tabs {
+    padding-left: 10px;
+}
+
+ul.nav.nav-tabs li a {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #D1DBDD;
+    padding: 20px 0 0 0;
+    margin-right: 20px;
+    background: none;
+    border: none;
+}
+
+ul.nav.nav-tabs li a:hover {
+    color: #5BBFDE;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #5BBFDE;
+}
+
+ul.nav.nav-tabs li.active a {
+    border: none;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #5BBFDE;
+    color: #5BBFDE;
+}
+
+ul.nav.nav-tabs li.gatewayerror a {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ff0000;
+    padding: 20px 0 0 0;
+    margin-right: 20px;
+    background: none;
+    border: none;
+}
+
+ul.nav.nav-tabs li.gatewayerror a:hover {
+    color: #ff0000;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ff0000;
+}
+
+ul.nav.nav-tabs li.gatewayerroractive a {
+    border: none;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ff0000;
+    color: #ff0000;
+}
+
+.submittal-new-form {
+    padding: 30px;
+}
+
+.submittal-new-form .row > div {
+    padding: 0 8px;
+}
+
+.submittal-new-form .row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.submittal-list {
+    height: inherit;
+    /*padding-left: 0;*/
+    /*border-left: 1px solid #DCE2E4;*/
+}
+
+/*submit filter link*/
+.sfl-holder a, span.submittal-file-link {
+    text-decoration: underline;
+    color: #83C0E9;
+    line-height: 42px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+/*list documents table*/
+.list-documents {
+    margin: 0;
+    font-size: 15px;
+}
+
+.list-documents tr {
+    border-bottom: 1px solid #DCE2E4;
+}
+
+@media only screen and (max-device-width: 767px) {
+    .submittal-list {
+        display: none;
+    }
+}
+
+.list-documents > tbody > tr > td {
+    border: none;
+    padding: 24px 10px;
+    max-width: 360px;
+    vertical-align: middle;
+}
+
+.submittal-list .list-documents > tbody > tr > td {
+    padding: 18px;
+    vertical-align: middle;
+}
+
+.list-documents td {
+    color: #959EA0;
+}
+
+.list-documents td:first-of-type {
+
+}
+
+.circle-index {
+    border-radius: 50%;
+    text-transform: uppercase;
+    color: #FEFEFE;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+}
+
+/*document type*/
+.dt-rfi {
+    background: #5BCCDE;
+
+}
+
+.list-documents .dt-rfi.circle-index {
+    margin-left: 15px;
+}
+
+.dt-co {
+    background: #5B97DE;
+}
+
+.dt-po {
+    background: #6f1400;
+}
+
+.dt-tr {
+    background: #ffff00;
+}
+
+/*revisions*/
+.revisions ul::before {
+    color: rgba(171, 178, 180, 0.79);
+    content: 'Revision:';
+}
+
+.revisions ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-width: 160px;
+}
+
+.revisions li {
+    color: rgba(197, 204, 206, 0.48);
+    display: inline;
+}
+
+.revisions a {
+    color: #7BBDEA;
+}
+
+.revisions li + li:before {
+    content: " | ";
+}
+
+/*submittal status actions*/
+.sb-status {
+    /*background: #FFFFFF;*/
+    background: none;
+    border: none;
+}
+
+.sb-status span {
+    text-transform: capitalize;
+    font-weight: normal;
+    display: inline !important;
+}
+
+.sb-status .fa {
+    margin: 0;
+}
+
+.sb-status .fa-angle-down {
+    margin-left: 3px;
+    font-size: 22px;
+    color: #8F8F8F;
+}
+
+.approved {
+    color: #6BC186;
+}
+
+.rejected {
+    color: #DE5E5E;
+}
+
+.pending {
+    color: #82C0E5;
+}
+
+.submitted {
+    color: #E2956E;
+}
+
+.submittal-list .document-actions ul {
+    margin: 0;
+}
+
+/*document actions*/
+.document-actions ul {
+    list-style: none;
+    cursor: pointer;
+}
+
+.document-actions li {
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+.document-actions i {
+    color: #959EA0;
+    font-size: inherit;
+    vertical-align: middle;
+}
+
+.rfi-pdf {
+    margin-bottom: 15px;
+}
+
+.stake-holders a, a:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: #43A1E2;
+}
+
+.dropdown {
+/ / margin-top: - 6 px;
+}
+
+.rfi-holder {
+    display: flex;
+}
+
+.chips-holder {
+    display: table;
+}
+
+.chips-holder ul {
+    padding: 0;
+    margin: 0;
+}
+
+.chips-holder ul li {
+    padding-bottom: 7px;
+    list-style-type: none;
+    float: left;
+    margin: 0 5px 0 0;
+}
+
+.chips-holder ul li img {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.chips-holder ul li .assignee-initials, .submittal-task-comments .assignee-initials {
+    margin-top: -2px;
+    margin-right: 5px;
+}
+
+.chips-holder ul li a {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.chips-holder ul li img, .chips-holder ul li a, .chips-holder ul li span {
+    display: inline;
+}
+
+.no-content {
+    font-size: 29px;
+    color: #D1DBDD;
+    padding: 40px 0px;
+    text-align: center;
+}
+
+.attachments {
+    max-height: 225px;
+    overflow: auto;
+}
+
+.attachment {
+    border-bottom: 1px solid #E8EDEE;
+}
+
+.attachment-top a img {
+    width: 130px;
+}
+
+.url-icon {
+    padding-left: 8px;
+}
+
+.img-circle {
+    text-decoration: none;
+}
+
+.table-responsive {
+    max-height: 800px;
+    overflow: auto;
+}
+
+.submittal-page {
+    padding: 10px 18px;
+}
+
+.submittal-page .submittal-listing,
+.submittal-page .submittal-detail {
+    min-height: 200px;
+}
+
+.submittal-task-comments {
+    border: 1px solid #DCE2E4;
+    border-radius: 4px;
+    box-shadow: none;
+    color: #343434;
+}
+
+.submittal-files {
+    padding: 12px;
+    border-bottom: 1px solid #DCE2E4;
+}
+
+.submittal-new-form .comment-header .age:after {
+    content: '';
+}
+
+.submittal-task-comments .attachments {
+    padding: 0 12px;
+}
+
+.submittal-task-comments .attachments .attachment {
+    padding: 8px;
+}
+
+.attachment .attachment-user {
+    margin-bottom: 5px;
+}
+
+.submittal-task-comments .attachments .attachment .attachment-content {
+    margin: 0;
+}
+
+.submittal-task-comments .submittal-files .fa.fa-file {
+    font-size: 18px;
+}
+
+.submittal-task-comments .submittal-files span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+p.attachment-content:before, p.attachment-content:after {
+    display: inline;
+}
+
+.submittal-file-link:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: #43A1E2;
+}
+
+.attachment-top .fa.fa-file {
+    color: #959EA0;
+}
+
+.list-documents .submittal-row {
+    cursor: pointer;
+}
+
+a.thumbnail.model-thumbnail {
+    display: inline-block;
+}
+
+@media only screen and (min-width: 768px) {
+    .submittal-list {
+        padding: 0;
+    }
+}

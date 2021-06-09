@@ -1,0 +1,8 @@
+.contact-page {
+    padding: 10px 10px;
+}
+
+.contact-page ul.pagination {
+    margin-top: 0;
+    float: right;
+}

@@ -1,0 +1,803 @@
+@media only screen and (min-width: 336px) {
+    .logo-wrp {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo-wrp img {
+        margin-right: 0;
+    }
+
+    .selectbox-wrp {
+        width: 100%;
+    }
+
+    .header-username {
+        line-height: 34px;
+    }
+
+    .header-profile-icon {
+        display: none;
+    }
+
+    .sub-header:empty {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .logo-wrp {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo-wrp img {
+        float: left;
+        margin: 15px 0 -23px 13px;
+    }
+
+    .select-a-project {
+        float: right !important;
+    }
+
+    .user-profile-name {
+        position: absolute;
+        top: 11px;
+        right: 28px;
+    }
+
+    .selectbox-wrp {
+        width: 100%;
+    }
+
+    header .sub-header {
+        padding: 9px 13px 8px 27px;
+    }
+
+    .header-username {
+        line-height: 34px;
+    }
+
+    .header-profile-icon {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .logo-wrp {
+        width: auto;
+    }
+
+    .header-profile-icon {
+        display: inline-block;
+    }
+
+    .selectbox-wrp {
+        width: 60%;
+    }
+
+    .logo-wrp img {
+        margin-right: 30px;
+    }
+}
+
+.main-layout {
+    height: 100px;
+}
+
+.wrapper {
+    background: white;
+    padding-top: 12px;
+}
+
+header {
+    background: #FFFFFF;
+}
+
+.header {
+    border-bottom: 1px solid #E2D7D7;
+    padding: 5px;
+    max-height: 50px;
+}
+
+.sub-header {
+    max-height: 45px;
+    border-bottom: 1px solid #E2D7D7;
+    padding: 5px;
+}
+
+.sub-header-mobile {
+    display: none;
+}
+
+.logo-mainpage {
+    width: 120px;
+}
+
+.app-breadcrumb {
+    font-size: 15px;
+    background: #FFFFFF;
+    margin: 0;
+    line-height: 14px;
+    /*padding: 6px 0;*/
+}
+
+.app-breadcrumb li a {
+    color: #525252;
+    text-decoration: none;
+}
+
+.app-breadcrumb li a:hover {
+    text-decoration: underline;
+    color: rgba(82, 82, 82, 0.75);
+}
+
+.breadcrumb > .active {
+    color: #525252;
+}
+
+.header ul.header-options {
+    float: left;
+    margin: 7px 25px 0 0;
+    border-right: 1px solid #D8D4D4;
+    padding-right: 10px;
+}
+
+.header ul.header-options li {
+    float: left;
+    list-style-type: none;
+    font-size: 16px;
+    margin-right: 14px;
+    position: relative;
+}
+
+.header ul.header-options li a {
+    color: #343434;
+    font-size: 14px;
+}
+
+.header ul li a:hover {
+    color: #337ab7;
+}
+
+.header ul.header-options li span {
+    padding: 2px;
+    font-size: 10px;
+    background: red;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+}
+
+.header .user-profile-name {
+    font-size: 17px;
+    float: left;
+    margin-top: 2px;
+}
+
+.header .user-profile-name ul li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.start-project-btn {
+    margin-left: 10px;
+}
+
+.margin-left10px {
+    margin-left: 10px;
+}
+
+.margin-right10px {
+    margin-right: 10px;
+}
+
+.margin-left2px {
+    margin-left: 2px;
+}
+
+.padding-top12px {
+    padding-top: 12px;
+}
+
+.header-image {
+    object-fit: cover;
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+}
+
+.profile-drop-icon {
+    margin-left: 10px;
+}
+
+.user-profile-name i {
+    margin-left: 0.3em;
+    margin-top: 3px;
+}
+
+.fa-chevron-down {
+    font-size: 14px;
+}
+
+.header-profile-icon {
+    position: relative;
+    vertical-align: middle;
+}
+
+.header-profile-icon svg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.project-options {
+    padding: 0 5px 0 15px;
+}
+
+.ddl-full-popup {
+    max-height: 220px;
+    overflow: auto;
+}
+
+.app-breadcrumb li {
+    max-width: 280px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.mobile-header, .header-hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 600px), screen and (max-device-width: 774px) and (orientation: landscape) {
+    .mobile-header, .header-hamburger {
+        display: block;
+    }
+
+    .logo-mainpage {
+        width: 90px;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .mobile-logo-wrp {
+        padding: 12px 8px 9px;
+    }
+
+    .select-proj button {
+        font-size: 15px;
+    }
+
+    .select-proj .dropdown button .fa {
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+    .hamburger-menu {
+        /*background: white;*/
+        display: inline-block;
+        /*line-height: 48px;*/
+        position: absolute;
+        padding: 16px 18px 10px;
+        right: -49px;
+    }
+
+    .hamburger-wrp {
+        background: rgba(212, 212, 212, 0.17);
+        border-bottom: 1px solid rgba(212, 212, 212, 0.5);
+    }
+
+    .mobile-header .select-proj {
+        line-height: 50px;
+        padding-right: 5px;
+        margin-left: 36px;
+    }
+
+    .select-proj button span {
+        margin-right: 16px;
+        max-width: 150px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .right-content button {
+        margin-right: 5px;
+    }
+
+    .header-hamburger {
+        top: 0;
+        left: -270px;
+        background: white;
+        width: 270px;
+        position: fixed;
+        border-right: 1px solid #E2D7D7;
+        z-index: 100;
+        height: 100%;
+    }
+
+    .mobile-header {
+        top: 0;
+        background: white;
+        width: 100%;
+        position: fixed;
+        border-bottom: 1px solid #E2D7D7;
+        z-index: 99;
+        height: 50px;
+    }
+
+    header {
+        margin-top: 50px;
+    }
+
+    .user-profile-name {
+        right: 18px;
+    }
+
+    .header-image {
+        width: 25px;
+        height: 25px;
+    }
+
+    .header-profile-icon {
+        top: -2px;
+        display: inline-block;
+    }
+
+    header .sub-header {
+        padding-left: 17px;
+    }
+
+    /*.app-breadcrumb li:nth-child(2) {
+        max-width: 90px;
+    }
+
+    */
+    .app-breadcrumb {
+        font-size: 15px;
+    }
+
+    .app-breadcrumb li {
+        display: none;
+    }
+
+    .side-nav {
+        display: none;
+    }
+
+    .project-layout .project-detail-view {
+        margin-left: 0;
+    }
+
+    .breadcrumb > li + li:before {
+        padding: 0;
+        content: '';
+    }
+
+    .app-breadcrumb li:last-child {
+        display: inline-block;
+        max-width: 180px;
+    }
+
+    .header-profile-icon svg {
+        position: absolute;
+        right: -4px;
+        bottom: 2px;
+    }
+
+    .sidebar-list ul {
+        padding: 0;
+    }
+
+    .sidebar-list ul li {
+        position: relative;
+        padding: 10px 15px;
+        border-bottom: 1px solid #f1efef;
+        cursor: pointer;
+    }
+
+    .sidebar-list ul li.active {
+        background: #f1efef;
+    }
+
+    .sidebar-list ul li i {
+        position: absolute;
+        top: 13px;
+    }
+
+    .sidebar-list ul li span {
+        padding-left: 25px;
+    }
+
+    .sidebar-list ul li:hover {
+        background-color: rgba(212, 212, 212, 0.1);
+    }
+
+    .user-profile-name .dropdown-menu {
+        right: 0;
+        left: auto;
+    }
+
+    .select-proj .dropdown-menu li a {
+        max-width: 180px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .activities {
+        overflow: hidden;
+    }
+
+    .do-not-display {
+        display: none;
+    }
+
+    .sidebar-list {
+        height: 100%;
+    }
+
+    .sidebar-list span {
+        font-size: 15px;
+    }
+
+    .no-menu-message {
+        position: relative;
+        top: 40%;
+        text-align: center;
+        font-style: italic;
+    }
+
+    .no-menu-message i {
+        padding-right: 5px;
+    }
+}
+
+small {
+    word-wrap: break-word;
+}
+
+@media only screen and (max-width: 400px) {
+    .thumb-wrapper .project-options {
+        padding: 0
+    }
+}
+
+@media only screen and (max-device-width: 600px), screen and (max-device-width: 780px) and (orientation: landscape) {
+
+    /*setting padding for ios to 15px */
+    .mobile-header {
+        height: 65px;
+    }
+
+    .mobile-header, .hamburger-wrp {
+        padding-top: 15px;
+    }
+
+    .user-profile-name {
+        top: 26px;
+    }
+
+    header .sub-header {
+        padding-top: 24px;
+    }
+
+    .createProject_modal .modal-dialog .modal-content, .task-filter-modal .modal-dialog .modal-content {
+        padding-top: 10px;
+    }
+}
+
+.add-button-container {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px 16px;
+    font-size: 18px;
+    display: none;
+}
+
+.add-button-container .model-name {
+    max-width: 280px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 17px;
+}
+
+.model-title {
+    line-height: 32px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
+    .add-button-container .model-name {
+        max-width: 180px;
+    }
+}
+
+@media only screen and (max-device-width: 1000px) {
+    .sub-header-visible {
+        display: none;
+    }
+
+    .models-subnav-options {
+        display: none;
+    }
+
+    .add-button-container {
+        display: block;
+    }
+
+    .task-page .modal-header button.create-model {
+        display: block;
+    }
+}
+
+/*status bar fix ipad and devices with different hamburger menu*/
+
+@media only screen and (min-device-width: 601px) and (max-device-width: 768px) {
+    .header .user-profile-name {
+        margin-top: 16px;
+    }
+}
+
+@media only screen and (min-device-width: 601px) and (max-device-width: 1024px) {
+    header {
+        padding-top: 15px;
+    }
+}
+
+/*close*/
+
+.text-overflow {
+    overflow: hidden;
+    white-space: nowrap; /* Don't forget this one */
+    text-overflow: ellipsis;
+}
+
+.common-modal, .create-project-modal {
+    text-align: center;
+    padding: 0 !important;
+}
+
+.common-modal .modal-dialog, .create-project-modal .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.create-project-modal .modal-dialog {
+    width: 740px;
+}
+
+.modal-workerAdd {
+    width: 500px;
+}
+
+.modal-dialog .modal-title {
+    font-size: 17px;
+}
+
+.common-modal:before, .create-project-modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+}
+
+.upload-list-container .upload-list {
+    position: absolute;
+    right: -7px;
+    z-index: 1000;
+    width: 280px;
+    padding: 5px 0;
+    margin: 7px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    color: #525252;
+}
+
+.upload-list-container .upload-list ul {
+    margin: 0 15px;
+    padding: 0;
+}
+
+.upload-list-container .upload-list p {
+    margin: 10px 15px;
+    padding: 0;
+}
+
+.upload-list-container .upload-list ul li {
+    float: none;
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #E2D7D7;
+    font-size: 14px;
+}
+
+.upload-list-container .upload-list ul li:last-child {
+    border: none;
+}
+
+.upload-list-container .upload-list .progressbar .blue-bar {
+    height: 5px;
+}
+
+.upload-list-container .upload-list .title {
+}
+
+.upload-list-container .upload-list li h5 {
+    margin: 0 0 2px 0;
+}
+
+.upload-list-container .upload-list li h5 span {
+    background: transparent;
+    font-size: 14px;
+    position: initial;
+    display: block;
+    padding: 0;
+    line-height: 18px;
+    width: calc(100% - 18px);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.upload-list-container .upload-list ul a.cancel {
+    color: #337ab7;
+    line-height: 18px;
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+.upload-list-container .upload-list ul a.cancel:hover {
+    opacity: 1;
+}
+
+.upload-list-container .upload-list ul li .upload-icon {
+    float: left;
+}
+
+.upload-list-container .upload-list ul li .upload-icon i {
+    font-size: 25px;
+    line-height: 35px;
+    color: #999;
+}
+
+.upload-list-container .upload-list ul li .upload-content {
+    margin-left: 40px;
+}
+
+.upload-list-container .working-icon {
+    position: absolute;
+    top: -7px;
+    left: -9px;
+    display: block;
+}
+
+.header .upload-list-container a.upload-list-dropdown {
+    position: relative;
+    z-index: 10;
+    font-size: 16px;
+    color: #555;
+    top: 2px;
+}
+
+.tutorials-btn{
+    position: relative;
+    z-index: 10;
+    top: -3px;
+}
+
+.upload-list-container .popover-inner {
+    width: 210px;
+    text-align: center;
+}
+
+.ontarget-popover {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    min-width: 225px;
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    color: #525252;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.ontarget-popover:hover {
+    background: #fff;
+}
+
+.ontarget-popover i.material-icons {
+    float: left;
+    padding: 0 5px;
+}
+
+.ontarget-popover .message-wrapper {
+    margin-left: 40px;
+}
+
+.ontarget-popover a.close {
+    font-size: 14px;
+}
+
+.btn-group [uib-btn-radio].btn {
+    background: #eaeaea;
+    border: 0 none;
+}
+
+.btn-group [uib-btn-radio].btn:hover {
+    background: #dadada;
+}
+
+.btn-group [uib-btn-radio].btn.active {
+    box-shadow: none;
+    background: #50AAC2;
+    color: #fff;
+}
+
+.header-profile-icon div {
+    float: none !important;
+}
+
+.header-profile-icon .assignee-initials {
+    margin-right: 0;
+}
+
+.view-hover:hover{
+    cursor: pointer;
+}
+
+.filter-div {
+    border-radius: 5px;
+}
+
+.filter-div:hover {
+    background-color: lightgrey;
+}
+
+.tracking-filter-div {
+    display: inline !important;
+    padding: 8px 8px 8px 15px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+}
+
+.tracking-filter-div:hover {
+    background-color: lightgrey;
+}
+
+.baseline-div {
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+.baseline-div:hover {
+    background-color: lightgrey;
+}
+
+.baseline-list {
+    list-style: none;
+}

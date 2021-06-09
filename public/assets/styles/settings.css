@@ -1,0 +1,387 @@
+﻿.settings-page {
+    padding: 10px 3px;
+}
+
+.settings-page .modal-body {
+    padding: 0px;
+}
+
+/*.settings-page .modal-header {
+/ / padding: 8 px 10 px;
+}*/
+
+.settings-detail-view {
+    margin-left: 15px;
+}
+
+.settings-leftmenu {
+    width: 158px;
+    float: left;
+}
+
+.settings-menucontent {
+    margin-left: 158px;
+    border-left: 1px solid #e5e5e5;
+}
+
+.settings-leftmenu ul {
+    margin-top: 23px;
+    padding: 0;
+}
+
+.settings-leftmenu ul li {
+    list-style: none;
+    padding: 6px 20px;
+}
+
+.settings-leftmenu ul li i {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.settings-leftmenu ul li.active {
+    color: white;
+    background: #90d1e5;
+}
+
+.edit-page small {
+    font-size: 95%;
+}
+
+.edit-page {
+    padding-left: 10px;
+
+    /*background: #FeFefe;*/
+}
+
+.edit-page h2 {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+#man-hours {
+    margin-top: 20px;
+}
+
+.disp-hrz {
+    margin: auto;
+}
+
+.hrz {
+    display: inline-block;
+}
+
+.profile-detail-content i {
+    font-size: 18px;
+}
+
+.profile-name {
+    margin-top: 20px;
+}
+
+.row-space {
+    margin-top: 10px;
+}
+
+.editprofile-footer {
+    margin-top: 5px;
+    margin-bottom: 25px;
+    margin-left: -12px;
+}
+
+.editprofile-img-container {
+    text-align: center;
+}
+
+.editprofile-img {
+    object-fit: cover;
+    width: 180px;
+    height: 180px;
+    margin-top: 10px;
+}
+
+.editprofile-img-container .text-muted {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #717171;
+}
+
+.editprofile-icon {
+    background: white;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: .8;
+    height: 50px;
+    bottom: 20px;
+}
+
+.editprofile-icon span {
+    cursor: pointer;
+    padding: 0 45px;
+}
+
+.edit-profile-error {
+    padding-top: 10px;
+}
+
+.editprofile-loader {
+    background: white;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    opacity: .8;
+    height: 100%;
+    top: 5px;
+    cursor: pointer;
+}
+
+.editprofile-loader span {
+    position: relative;
+    top: Calc(50% - 20px);
+}
+
+/*CUSTOMIZED RADIO BUTTON*/
+.settings-page input[type=checkbox ]:not(old) {
+    /*width: 2em;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;*/
+    opacity: 0;
+    /*display: none;*/
+}
+
+/*.table-borderless > tbody > tr > td,*/
+.table-borderless > tbody > tr > th,
+.table-borderless > tfoot > tr > td,
+.table-borderless > tfoot > tr > th,
+.table-borderless > thead > tr > td,
+.table-borderless > thead > tr > th {
+    border: none;
+}
+
+.settings-page input[type=checkbox ]:not(old) + label {
+    display: inline-block;
+    margin-left: -2em;
+    /*line-height: 1.5em;*/
+    line-height: 25px;
+}
+
+.settings-page calendar-title {
+    font-size: 1em;
+}
+
+.settings-page input[type=checkbox ]:not(old) + label > span {
+    display: inline-block;
+    width: 1.225em;
+    height: 1.225em;
+    margin: 5px;
+    /*margin: 0.5em 0.5em 0.5em 0.5em;*/
+    border: 1px solid #43a1e2;
+    border-radius: 4px;
+    /*background-image: -moz-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+    background-image: -ms-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+    background-image: -o-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+    background-image: -webkit-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+    background-image: linear-gradient(rgb(240,240,240),rgb(224,224,224));*/
+    vertical-align: bottom;
+    margin-left: 11px;
+    background: white;
+}
+
+.settings-page input[type=checkbox ]:not(old) + label > small {
+    font-size: 12px;
+    /*background-image: -moz-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+background-image: -ms-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+background-image: -o-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+background-image: -webkit-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+background-image: linear-gradient(rgb(224,224,224),rgb(240,240,240));*/
+}
+
+.settings-page input[type=checkbox]:not(old):checked + label > span:before {
+    content: '✓';
+    display: block;
+    width: 1.2em;
+    color: white;
+    font-size: 0.875em;
+    line-height: 1.3em;
+    text-align: center;
+    /*text-shadow: 0 0 0.0714em rgb(115,153,77);*/
+    font-weight: bold;
+}
+
+/*END RADIO BUTTON*/
+
+.editprofile-footer .blue-link {
+    line-height: 34px;
+}
+
+.password-conditions ul {
+    margin: 0 0 10px 0px;
+    padding: 0;
+    list-style: none;
+}
+
+.password-conditions ul li {
+    line-height: 21px;
+}
+
+.password-conditions ul li, .password-conditions ul li i {
+    -webkit-transition: color 300ms linear;
+    -moz-transition: color 300ms linear;
+    -o-transition: color 300ms linear;
+    transition: color 300ms linear;
+    color: #a8b6bb;
+}
+
+.password-conditions ul li i {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 9px;
+    position: relative;
+    top: -1px;
+}
+
+.password-conditions ul li.active, .password-conditions ul li.active i {
+    color: #525252;
+}
+
+.settings-btn-sidebar {
+    display: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+    .settings-leftmenu {
+        width: 100%;
+    }
+
+    .settings-menucontent {
+        margin-left: 0;
+        border-left: none;
+    }
+
+    .settings-detail-view {
+        margin-left: 0;
+    }
+
+    .settings-hide {
+        display: none;
+    }
+
+    .settings .modal-body {
+        padding: auto;
+    }
+
+    .settings-btn-sidebar {
+        display: block;
+    }
+
+    .settings-btn-sidebar i {
+        line-height: 24px;
+    }
+}
+
+input[placeholder] {
+    font-weight: normal;
+}
+
+.thumbnail.logo-thumbnail {
+    max-width: 250px;
+    margin: 10px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.thumbnail.logo-thumbnail img {
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+    .row-space div:nth-child(2) {
+        margin-top: 10px;
+    }
+}
+
+.row.showhower {
+    padding-left: 0;
+}
+
+.notification-content label {
+    font-weight: 100;
+    font-size: 13px;
+}
+
+.work-calendar {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.add-holiday {
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.add-holiday-table {
+    margin-bottom: 0px;
+}
+
+.holiday-form {
+    margin-top: 5px;
+}
+
+.emphasis {
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.settings-page input[type=checkbox ]:not(old) + label > span.selected-checkbox {
+    background: #43a1e2;
+}
+
+.weekDays-selector input {
+    display: none !important;
+}
+
+.weekDays-selector
+    /*input[type=checkbox] + label */
+{
+    display: inline-block;
+    border-radius: 6px;
+    width: 25px;
+    text-align: center !important;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #cccccc;
+}
+
+.report-timing-container {
+    border: 1px solid #cdcdcd;
+    border-radius: 4px;
+    margin: 20px;
+    padding: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.active-day {
+    background: #43a1e3;
+    color: #ffffff;
+}
+
+.custom-timing-div {
+    margin: 5px;
+    padding: 0;
+    width: 83%;
+}
+
+.report-hours-radio{
+    border: 1px #eaeaea solid;
+    padding: 2%;
+    font-size: 12px;
+}

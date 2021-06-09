@@ -1,0 +1,292 @@
+.graphs-page-wrp {
+    padding: 10px 30px;
+}
+
+.graph-title {
+    padding: 15px;
+    text-align: center;
+}
+
+.legend rect {
+    fill: white;
+    /*stroke: black;*/
+    opacity: 0.8;
+}
+
+.graph-title .modal-title {
+    display: inline-block;
+}
+
+.graph-title select {
+    min-width: 120px;
+}
+
+.no-user {
+    margin-left: -4px;
+}
+
+.sub-header-graphs {
+    padding: 0;
+}
+
+.tick line {
+    stroke: #797878;
+    opacity: 0.1;
+    stroke-width: 1;
+}
+
+#y-axis-bar-cost-code svg, #y-axis-bar svg, #y-axis-bar2 svg, #y-axis-line1 svg, #y-axis-line2 svg, #y-axis-stack svg, #y-axis-cuml svg, #x-axis-bar svg {
+    position: absolute;
+    pointer-events: none;
+}
+
+#due-task-user, #due-task-day, #task-status-user, #task-status, #planned-chart, #cuml-planned-chart {
+    overflow-x: auto;
+    margin: 0 30px 0 35px;
+}
+
+.x.axis .tick line {
+    stroke: #797878;
+    opacity: 0.1;
+    stroke-width: 1;
+}
+
+#due-task-cost-code, #due-task-user, #due-task-day, .linechart-wrp, #planned-chart, #past-due-cost-code-chart {
+    position: relative;
+}
+
+.flex-box-desktop .modal-content .no-chart {
+    height: 400px;
+}
+
+.no-chart .no-chart-msg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-100%);
+    text-align: center;
+}
+
+.bound-x .line {
+    fill: none;
+}
+
+.area {
+    stroke-width: 0;
+    opacity: 0.2;
+}
+
+#task-status-user {
+    height: 390px;
+}
+
+@media (max-width: 640px) {
+    .sub-header-graphs .modal-title {
+        width: 100%;
+    }
+}
+
+.graph-tooltip {
+    display: inline;
+    position: absolute;
+    /*color: #fff;*/
+    border: 1px solid #DCA;
+    /*background: #fffAF0;*/
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px #CCC;
+    z-index: 999;
+    padding: 14px 20px;
+    margin-top: -36px;
+    margin-left: 20px;
+    min-width: 180px;
+    line-height: 16px;
+    border: none;
+    background: rgba(0, 0, 0, 0.55);
+    box-shadow: none;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.graphs-tooltip {
+    position: relative;
+}
+
+.graph-tooltip:before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: calc(50% - 10px);
+    border-right: 10px solid rgba(0, 0, 0, 0.55);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.graph-tooltip.rightside-arrow:before {
+    content: "";
+    display: none;
+}
+
+.graph-tooltip.rightside-arrow:after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: calc(50% - 10px);
+    border-left: 10px solid rgba(0, 0, 0, 0.7);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.graph-tooltip-wrp {
+    min-width: 130px;
+}
+
+.stackgraph-tooltip-wrp {
+    min-width: 330px;
+}
+
+.callout {
+    z-index: 20;
+    position: absolute;
+    top: 30px;
+    border: 0;
+}
+
+.graph-tooltip-wrp img {
+    top: 20px;
+}
+
+.area {
+    pointer-events: none;
+}
+
+.pie-text {
+    font-size: 20px;
+}
+
+.legendline-wrp {
+    position: absolute;
+    left: 30px;
+    top: 310px;
+}
+
+.pie-chart-wrp {
+    overflow-x: auto;
+}
+
+#chart {
+    min-width: 400px;
+}
+
+.graph-title h4.modal-title {
+    line-height: 34px;
+}
+
+@media only screen and (max-device-width: 768px) {
+    .graphs-tooltip {
+        display: none;
+    }
+}
+
+.graphs-page-wrp .flex-box-desktop {
+    margin-bottom: 0;
+}
+
+/*.pull-at-bottom {
+    position: static;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .pull-at-bottom {
+        position: absolute;
+        bottom: 34px;
+    }
+}*/
+
+.graphs-page-wrp .flex-box-desktop {
+    overflow: visible;
+}
+
+.graphs-page-wrp .flex-box-desktop .modal-dialog {
+    margin: 8px auto;
+}
+
+@media (min-width: 1200px) {
+    .graphs-page-wrp .flex-box-desktop {
+        margin-bottom: 10px;
+    }
+}
+
+.bar-chart-section {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 440px;
+    overflow-y: auto;
+}
+
+#percent-complete-cost-code-chart .axis path,
+#percent-complete-cost-code-chart .axis line {
+    fill: none;
+    /*stroke: #000;*/
+    /*shape-rendering: crispEdges;*/
+    stroke: #797878;
+    opacity: 0.1;
+    stroke-width: 1;
+}
+
+.bar {
+    fill: steelblue;
+}
+
+.x.axis path {
+    display: none;
+}
+
+.horizontal-bar:hover {
+    /*fill: red !important;*/
+    opacity: 0.5;
+}
+
+.legend {
+    margin-right: 20px;
+    text-transform: capitalize;
+}
+
+.immovable-axis svg {
+    position: absolute;
+    pointer-events: none;
+}
+
+ .dcma-data h4{
+    color: dodgerblue;
+}
+
+.dcma-data span{
+}
+
+.dcma-threshold{
+    color: #ff0000 !important;
+}
+
+.tool-tip-text {
+    width: 300px;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 10px;
+    margin-top: 100px;
+}
+
+.tool-tip-text-image {
+    width: 300px;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    text-align: left;
+    border-radius: 6px 0px 0px 6px;
+    padding: 10px;
+    margin-top: 100px;
+    border-color: rgba(0,0,0,0.5);
+    margin-left: -2px;
+}

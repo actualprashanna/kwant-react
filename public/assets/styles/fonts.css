@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../fonts/ProximaNovaRegular.eot"); /* IE9*/
+    src: url("../fonts/ProximaNovaRegular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/ProximaNovaRegular.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/ProximaNovaRegular.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../fonts/ProximaNovaRegular.svg#Proxima Nova Regular") format("svg"); /* iOS 4.1- */
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../fonts/ProximaNovaRegular.eot"); /* IE9*/
+    src: url("../fonts/ProximaNovaRegular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/ProximaNovaRegular.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/ProximaNovaRegular.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../fonts/ProximaNovaRegular.svg#Proxima Nova Regular") format("svg"); /* iOS 4.1- */
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../fonts/ProximaNovaSemibold.eot"); /* IE9*/
+    src: url("../fonts/ProximaNovaSemibold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/ProximaNovaSemibold.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/ProximaNovaSemibold.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../fonts/ProximaNovaSemibold.svg#Proxima Nova Bold") format("svg"); /* iOS 4.1- */
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("../fonts/ProximaNovaBold.eot"); /* IE9*/
+    src: url("../fonts/ProximaNovaBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/ProximaNovaBold.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/ProximaNovaBold.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../fonts/ProximaNovaBold.svg#Proxima Nova Bold") format("svg"); /* iOS 4.1- */
+    font-weight: bold;
+}

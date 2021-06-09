@@ -1,0 +1,205 @@
+/*Layout*/
+
+.project-model .overlay-container {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 300px;
+    background-color: rgba(38, 42, 49, 0.9);
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.project-models-page .text-mag {
+    margin-top: 18px;
+}
+
+.project-model .overlay-container .overlay-navigation {
+    padding: 8px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.project-model .overlay-container .overlay-content {
+    overflow: auto;
+    border-bottom: 1px solid #262A31;
+    height: 27em;
+}
+
+.project-model .overlay-container .overlay-footer {
+    border-top: 2px solid #42464C;
+}
+
+.project-model .overlay-container .overlay-footer button {
+    width: 100%;
+    height: 35px;
+    background: none;
+    border: none;
+    font-size: 18px;
+}
+
+/*Style*/
+
+.overlay-container a {
+    text-decoration: none;
+    color: #CAD3D6;
+    cursor: pointer;
+}
+
+.filter-badge-container {
+    display: table;
+    padding: 0 8px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #262A31;
+}
+
+.filter-badge-container a {
+    display: block;
+    float: left;
+    border: 2px solid #6A6F75;
+    border-radius: 2px;
+    padding: 2px 4px;
+    text-decoration: none;
+    color: #90D1E5;
+    font-size: 12px;
+    background: #33373E;
+    margin: 0 5px 5px 0;
+    font-weight: 600;
+}
+
+.filter-badge-container a i {
+    display: block;
+    float: left;
+    margin: 2px 4px 0 0;
+    background: #A1A8AC;
+    border-radius: 50%;
+    padding: 2px;
+    font-size: 10px;
+    color: #33373E;
+}
+
+.submittal-listing-container {
+    color: #9DA4A8;
+    padding: 32px 8px 0 8px;
+    border-top: 2px solid #42464C;
+}
+
+.submittal-listing-container table {
+    overflow: auto;
+    width: 100%;
+}
+
+.submittal-listing-container table tr {
+    margin-bottom: 24px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.submittal-listing-container table tr:hover {
+    color: #FFFFFF;
+}
+
+.submittal-listing-container table td {
+    padding-bottom: 24px;
+}
+
+.submittal-listing-container table td span,
+.submittal-listing-container table td i {
+    cursor: pointer;
+}
+
+.submittal-listing-container table td.icon {
+    width: 16px
+}
+
+.submittal-listing-container table td.actions {
+    text-align: right;
+}
+
+.submittal-listing-container table td.actions i {
+    padding-right: 10px;
+}
+
+.submittal-listing-container table td button {
+    width: 100%;
+    border: 2px solid #C47C59;
+    color: #C47C59;
+    border-radius: 4px;
+    background: none;
+}
+
+/*model upload fixes*/
+@media only screen and (min-width: 640px) and (max-width: 768px) {
+    .createProject_modal .modal-dialog {
+        width: 100%;
+    }
+
+    .createProject_modal .modal-dialog .modal-content {
+        width: 90%;
+    }
+
+}
+
+/*model upload fixes*/
+@media only screen and (min-width: 312px) and (max-width: 640px) {
+
+    .createProject_modal .modal-dialog, .task-filter-modal .modal-dialog {
+        width: 100%;
+    }
+
+    .task-filter-modal .modal-dialog {
+        margin-top: 0;
+    }
+
+    .createProject_modal .modal-dialog .modal-content {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .createProject_modal, .task-filter-modal {
+        top: 0;
+        margin-top: 0;
+    }
+}
+
+.project-model .dropdown-menu {
+    right: 0;
+    left: initial;
+}
+
+.progressbar .blue-bar {
+    height: 20px;
+}
+
+.model-progress-bar {
+    width: 80%;
+    float: left;
+    padding-right: 5px;
+}
+
+.no-upl-image {
+    height: 200px;
+    background: black;
+}
+
+.model-progress {
+    padding: 1px 8px;
+}
+
+.cancel-upload {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    color: white;
+    z-index: 25;
+    cursor: pointer;
+}
+
+.thumb-wrapper .ui-block-wrapper .ui-block-spinner {
+    top: calc(50% - 15px);
+}
+
+.uploading-msg {
+    padding: 10px 0;
+}

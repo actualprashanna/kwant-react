@@ -1,0 +1,279 @@
+.btn-forgotpassword {
+    font-size: 14px !important;
+    padding: 0;
+    line-height: 36px;
+}
+
+.modal-footer {
+    padding: 15px 18px;
+}
+
+.modal-footer-model-translation{
+    padding: 12px 18px;
+    text-align: left;
+}
+
+.signin-page .error-summary {
+    background: #a1bdd0;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.signin-page .error-summary .error-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 20px;
+    max-height: 240px;
+}
+
+.signin-page .error-summary ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.signin-page .error-summary ul li {
+    color: #FBFBFB;
+    /*overflow-wrap: break-word;*/
+    word-wrap: break-word;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+
+    .signin-page input[type=password] {
+        font: large Verdana, sans-serif;
+        letter-spacing: 0px;
+        font-size: 14px;
+        line-height: 34px;
+    }
+
+    .signin-page input[type=password]::-webkit-input-placeholder {
+        font-size: 14px;
+        letter-spacing: 0px;
+    }
+
+    .signin-page input[type=password]::-moz-placeholder {
+        font-size: 14px;
+        letter-spacing: 0px;
+        line-height: 34px;
+    }
+
+    .signin-page input[type=password]:-moz-placeholder { /* Older versions of Firefox */
+        font-size: 14px;
+        letter-spacing: 0px;
+        line-height: 34px;
+    }
+
+    .signin-page input[type=password]:-ms-input-placeholder {
+        font-size: 14px;
+        letter-spacing: 0px;
+        line-height: 34px;
+    }
+}
+
+/* Safari 9.0+ (iOS Only) */
+@supports (-webkit-text-size-adjust:none) and (not (-ms-accelerator:true))
+and (not (-moz-appearance:none)) {
+    .signin-page input[type=password] {
+        font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .signin-form-wrp {
+        width: 100%;
+    }
+
+    .auth-wrp {
+        top: 20px;
+    }
+
+    .auth-wrp .logo {
+        margin-left: 14px;
+    }
+
+    .auth-wrp .modal-above {
+        margin: 0 -10px;
+    }
+
+    .auth-wrp .row-height {
+        display: block;
+        width: auto;
+    }
+
+    .signin-options {
+        clear: both;
+        text-align: center;
+    }
+
+    .signin-page .btn-forgotpassword {
+        width: 100%;
+        padding-bottom: 15px;
+        text-align: left;
+    }
+
+    .auth-wrp .signin-footer {
+        padding: 4px 18px 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .auth-wrp {
+        padding: 0 15px 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .signin-form-wrp {
+        width: 100%;
+    }
+
+    .signin-page .signin-form-wrp .procore-login {
+        margin: 6px auto 18px;
+    }
+
+    .auth-wrp .row-height {
+        display: block;
+        width: auto;
+    }
+
+    .auth-logo-wrp {
+        width: 100%;
+    }
+
+    .signin-page .signin-form-wrp .procore-login:hover::before {
+        width: 191px;
+        height: 75px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/*This is a temporary fix*/
+.signup-link {
+    display: none;
+}
+
+.signin-height {
+    height: auto;
+}
+
+.signin-page {
+
+}
+
+.page-layout {
+    height: 100%;
+}
+
+.signin-page .auth-wrp {
+    margin: 0 auto !important;
+}
+
+@media (min-width: 768px) {
+    .modal-dialog.auth-wrp {
+        padding: 100px 0;
+    }
+
+    .modal-dialog.signin-modal.procore-visible {
+        width: 580px;
+    }
+}
+
+.signin-wrp.background {
+    min-height: 100%;
+    background: url('../images/background.jpg');
+    background-size: cover;
+}
+
+.signin-background-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), transparent);
+}
+
+.signin-wrp.background .signin-background-overlay {
+    display: block;
+}
+
+.signin-modal.procore-visible .main-login-block {
+    border-right: 1px solid #ddd;
+}
+
+.signin-modal .modal-body .procore-login-block {
+    margin: 45px 0;
+}
+
+.signin-modal .modal-header .procore-login-block {
+    display: none;
+}
+
+.procore-login-block a {
+    color: #000;
+    opacity: 0.8;
+    transition: 0.3s opacity;
+}
+
+.procore-login-block a:hover {
+    color: #000;
+    opacity: 1;
+}
+
+.phone .procore-login-link .login-label {
+    display: block;
+}
+
+.phone .procore-login-link img {
+    height: 11px;
+}
+
+@media (max-width: 512px) {
+    .signin-modal .modal-header .procore-login-block {
+        display: block;
+    }
+
+    .signin-modal .modal-body .procore-login-block {
+        display: none;
+    }
+
+    .signin-modal.procore-visible .main-login-block {
+        border-right: 0 none;
+        width: 100%;
+    }
+}
+
+.signin-form {
+    width: 80%;
+}
+
+@media screen and (max-width: 340px) {
+    .signin-form {
+        width: 85%;
+    }
+}
+
+.signin-wrp .signin-page .signin-modal .modal-body {
+    padding-bottom: 5px;
+}
+
+.remember-me{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.remember-me label {
+    font-weight: lighter;
+}
+
+.remember-me input {
+    margin-right: 6px;
+}

@@ -1,0 +1,80 @@
+textarea{
+    resize: none;
+}
+
+.thread-comments ul{
+    list-style: none;
+    margin-left: 0;
+    padding: 0;
+}
+
+.thread-comments li>ul>li:first-child{
+    margin-left: 0;
+}
+
+.thread-comments li>ul>li{
+    margin-left: 40px;
+}
+
+.actor-icon-holder{
+    width: 8%;
+    float: left;
+}
+
+.actor-icon-holder img{
+    width: 35px;
+    height: 35px;
+}
+
+.comment-block .content-holder{
+    float: left;
+    width: 92%;
+}
+
+.comment-header .actor-name{
+    vertical-align: middle;
+    font-size: 20px;
+    color: #646464;
+}
+
+.comment-header .age{
+    color: #96D3E6;
+    float: right;
+    font-weight: bold;
+}
+
+.comment-header .age:after{
+    content: ' ago';
+}
+
+.comment-body{
+    margin-top: 8px;
+}
+
+.comment-actions ul{
+    list-style: none;
+    padding: 0;
+}
+
+.comment-actions li{
+    font-weight: bold;
+    color: #DFE5E8;
+    float: left;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.comment-actions li:first-child{
+    margin-left:0;
+}
+
+.comment-actions li:after {
+    content: " | ";
+}
+.comment-actions li:last-child:after {
+    content: "";
+}
+
+.comment-actions li a{
+    color: #DFE5E8;
+}

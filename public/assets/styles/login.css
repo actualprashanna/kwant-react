@@ -1,0 +1,76 @@
+.border-right {
+    border-right: 1px solid #e5e5e5;
+}
+
+.signin-page .procore-login {
+    margin-top: 40px;
+}
+
+.signin-page .procore-login .login-label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.signin-page .procore-login button {
+    width: 100%;
+    padding: 0;
+    color: #fff;
+    /*background-color: rgba(244, 126, 66, 0.83);
+    border: 2px solid rgba(244, 126, 66, 0.69);*/
+    background: none;
+    border: none;
+    border-radius: 2px;
+}
+
+.signin-page .procore-login button .login-img-wrap img {
+    max-width: 100%;
+}
+
+.signin-page .procore-login button .login-img-wrap {
+    width: 18%;
+    display: inline-block;
+    float: left;
+    width: 160px;
+    /*padding: 8px;
+    background: rgba(255,255,255,0.8);*/
+}
+
+.signin-page .procore-login button .login-btn-wrap {
+    display: inline-block;
+    float: left;
+    padding: 8px;
+    width: 82%;
+    line-height: 22px;
+    font-size: 18px;
+}
+
+/*
+.signin-page .procore-login {
+    cursor: pointer;
+    width: 130px;
+    height: 50px;
+    margin: 52px auto 35px;
+    transition: border-color .5s ease-in-out;
+    -o-transition: border-color .5s ease-in-out;
+    -webkit-transition: border-color .5s ease-in-out;
+    -moz-transition: border-color .5s ease-in-out;
+}
+
+.signin-page .procore-login img {
+    width: 137px;
+}
+
+.signin-page .procore-login::before {
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.signin-page .procore-login:hover::before {
+    border-color: #686968;
+    position: absolute;
+    content: "";
+    width: 191px;
+    height: 115px;
+    top: 24px;
+    left: 4px;
+}*/

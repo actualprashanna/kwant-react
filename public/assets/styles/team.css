@@ -1,0 +1,202 @@
+﻿
+.team-image {
+    object-fit: cover;
+    width: 48px;
+    height: 48px;
+}
+
+.worker-image {
+    object-fit: cover;
+    width: 25px;
+    height: 25px;
+}
+
+.worker-image-checkins {
+    object-fit: cover;
+    width: 175px;
+    height: 175px;
+}
+
+.teams {
+    padding-top: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.teams .disabled {
+    opacity: 0.5;
+}
+
+.teams .disabled-msg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.modal-dialog {
+    margin: 5px auto;
+    height: 100%;
+}
+
+.team-page {
+    padding: 10px 0;
+}
+
+.authority-dropdown button {
+    padding: 0 0;
+}
+
+.authority-dropdown {
+    float: right;
+}
+
+.user-action-btn {
+    padding-right: 0;
+    /*text-align: right;*/
+}
+
+.team-list-item {
+    display: flex;
+    align-items: center;
+    min-width: 600px;
+}
+
+.teams-dropdown {
+    font-size: 17px;
+}
+
+@media only screen and (max-width: 600px) {
+    .team-list-item .list-title {
+        font-size: 20px;
+    }
+}
+
+.team-list-item .list-title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.select-role {
+    background: none;
+    width: 100px;
+    cursor: pointer;
+    border: none;
+    font-size: 17px;
+}
+
+.change-authority-wrp {
+    /*text-align: left;*/
+    font-size: 17px;
+}
+
+.authority-name {
+    padding-left: 5px;
+}
+
+.procore-user-list > div {
+    min-height: 50px;
+}
+
+.user-invitation-list {
+    margin: 15px 0;
+    overflow-y: auto;
+    max-height: 350px;
+    overflow-x: hidden;
+}
+
+.user-invitation-list .row {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.user-invitation-list .user-info strong {
+    display: block;
+}
+
+.send-mail-alert {
+    position: absolute;
+    font-size: 14px;
+    top: 45%;
+    right: 0;
+    background: white;
+    border-radius: 7px;
+}
+
+.team-list-item select-dropdown .btn{
+    border: 1px solid #ccc;
+}
+
+.add-worker-modal select-dropdown .btn{
+    border: 1px solid #ccc;
+    border-radius: 0;
+}
+
+.custom-cancel {
+    border: 1px solid red;
+    color: red;
+    font-size: 12px!important;
+}
+
+.custom-cancel:hover {
+    background: #ffb9b9 !important;
+    color: red !important;
+}
+
+.custom-save {
+    border: 1px solid #00a1ff;
+    color: #00a1ff;
+    font-size: 12px!important;
+}
+
+.custom-save:hover {
+    background: #b9e5ff !important;
+    color: #00a1ff !important;
+}
+
+.worker-dropdown .btn-ddt {
+    border-radius: 0;
+}
+
+.worker-row-data{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.doc-expired {
+    color: #e74c3c;
+}
+
+md-input-container label:not(.md-container-ignore) {
+    bottom: 85%;
+}
+
+.worker-name-cell > span{
+    display: flex;
+    align-items: center;
+}
+
+.worker-drop-down{
+    height: auto !important;
+}
+
+/*.worker-modal{
+    max-width: 400px;
+    text-align: center;
+    padding: 0 !important;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    content: '';
+    display: inline-block;
+    height: 50%;
+    vertical-align: middle;
+    margin-right: -4px;
+    background-color: red;
+}*/
+

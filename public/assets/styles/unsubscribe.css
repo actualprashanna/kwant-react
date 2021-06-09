@@ -1,0 +1,32 @@
+.unsubscribe-wrapper {
+    height: 100vh;
+}
+
+.unsubscribe-body {
+    vertical-align: middle;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    margin: 0 auto;
+}
+
+.unsubscribe-body div {
+    text-align: center;
+    line-height: 1.8;
+}
+
+.unsubscribe-header {
+    font-size: 25px;
+}
+
+.unsubscribe-content {
+    margin: 10px auto 0;
+    width: 600px;
+    padding: 20px;
+    background: white;
+}
+
+.unsubscribe-wrapper .ontarget-logo img {
+    margin: 20px 0;
+    height: 40px;
+}

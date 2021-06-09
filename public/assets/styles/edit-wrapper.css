@@ -1,0 +1,30 @@
+.edit-wrapper {
+    float: left;
+    width: Calc(100% - 20px);
+}
+
+.edit-wrapper select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    background: #ffffff;
+    border: 0;
+}
+
+.calendar-edit-wrapper .dropdown-menu {
+    max-width: 235px;
+}
+
+.schedule-list .calendar-edit-wrapper tbody {
+    min-height: 0;
+    max-height: 200px;
+}
+
+.schedule-list .calendar-edit-wrapper tbody tr td {
+    height: auto;
+}
+
+.edit-wrapper-progress input {
+    width: 60%;
+}

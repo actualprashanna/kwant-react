@@ -1,0 +1,563 @@
+.btn.btn-clear {
+    border: none;
+    background: none;
+}
+
+.btn[disabled] {
+    opacity: .5;
+}
+
+.text-underlined {
+    text-decoration: underline;
+}
+
+.text-underlined:hover {
+    text-decoration: underline;
+}
+
+.modal-dialog .modal-above {
+    overflow: hidden;
+    margin-bottom: 6px;
+}
+
+.modal-dialog .modal-above > img.logo {
+    height: 50px;
+}
+
+.modal-dialog .modal-above > .text {
+    line-height: 52px;
+    color: #4B4B4B;
+    margin-right: 2px;
+    font-size: 21px;
+}
+
+.modal-dialog .modal-above > .text > a {
+    text-decoration: underline;
+    color: #4B4B4B;
+}
+
+.form-group .form-control.ng-dirty.ng-invalid {
+    border-color: #D89594;
+}
+
+.form-group [ng-message].help-block {
+    font-size: 12px;
+}
+
+.form-group > .row > div:nth-child(1) {
+    padding-right: 5px;
+}
+
+.form-group > .row > div:nth-child(2) {
+    padding-left: 5px;
+}
+
+.relative-container {
+    position: relative;
+}
+
+.relative-container .vertical-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%
+}
+
+/* content styles */
+
+.inside {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #ededed;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f4f4f4), color-stop(100%, #ededed));
+    background: -moz-linear-gradient(top, #f4f4f4 0%, #ededed 100%);
+    background: -ms-linear-gradient(top, #f4f4f4 0%, #ededed 100%);
+}
+
+.inside-full-height {
+    /*
+    // if you want to give content full height give him height: 100%;
+    // with content full height you can't apply margins to the content
+    // content full height does not work in ie http://stackoverflow.com/questions/27384433/ie-display-table-cell-child-ignores-height-100
+    */
+    height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.content {
+    padding: 12px 3px;
+}
+
+/* columns of same height styles */
+
+.row-height {
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.col-height {
+    display: table-cell;
+    float: none;
+    height: 100%;
+}
+
+.col-top {
+    vertical-align: top;
+}
+
+.col-middle {
+    vertical-align: middle;
+}
+
+.col-bottom {
+    vertical-align: bottom;
+}
+
+.loading-text {
+    text-align: center;
+    padding: 10px;
+    color: #666;
+}
+
+.colored-list {
+    margin: 0 5px 0 0 !important;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.colored-list li span {
+    float: left;
+    line-height: 14px;
+    font-size: 13px;
+}
+
+.colored-list li .color {
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    display: block;
+    background-color: #111;
+    margin-right: 5px;
+}
+
+@media (min-width: 480px) {
+    .row-xs-height {
+        display: table;
+        table-layout: fixed;
+        height: 100%;
+        width: 100%;
+    }
+
+    .col-xs-height {
+        display: table-cell;
+        float: none;
+        height: 100%;
+    }
+
+    .col-xs-top {
+        vertical-align: top;
+    }
+
+    .col-xs-middle {
+        vertical-align: middle;
+    }
+
+    .col-xs-bottom {
+        vertical-align: bottom;
+    }
+}
+
+@media (min-width: 768px) {
+    .row-sm-height {
+        display: table;
+        table-layout: fixed;
+        height: 100%;
+        width: 100%;
+    }
+
+    .col-sm-height {
+        display: table-cell;
+        float: none;
+        height: 100%;
+    }
+
+    .col-sm-top {
+        vertical-align: top;
+    }
+
+    .col-sm-middle {
+        vertical-align: middle;
+    }
+
+    .col-sm-bottom {
+        vertical-align: bottom;
+    }
+}
+
+@media (min-width: 992px) {
+    .row-md-height {
+        display: table;
+        table-layout: fixed;
+        height: 100%;
+        width: 100%;
+    }
+
+    .col-md-height {
+        display: table-cell;
+        float: none;
+        height: 100%;
+    }
+
+    .col-md-top {
+        vertical-align: top;
+    }
+
+    .col-md-middle {
+        vertical-align: middle;
+    }
+
+    .col-md-bottom {
+        vertical-align: bottom;
+    }
+}
+
+@media (min-width: 1200px) {
+    .row-lg-height {
+        display: table;
+        table-layout: fixed;
+        height: 100%;
+        width: 100%;
+    }
+
+    .col-lg-height {
+        display: table-cell;
+        float: none;
+        height: 100%;
+    }
+
+    .col-lg-top {
+        vertical-align: top;
+    }
+
+    .col-lg-middle {
+        vertical-align: middle;
+    }
+
+    .col-lg-bottom {
+        vertical-align: bottom;
+    }
+}
+
+/*Custom Css*/
+.procore-project-block .loader-icon{
+    padding: 85px 0;
+    font-size: 1.3em;
+}
+
+.procore-project-block .loader-icon i {
+    margin-right: 5px;
+}
+
+.procure-project-list {
+    overflow: hidden;
+    overflow-y: auto;
+    max-height: 200px;
+}
+
+.procure-project-list h3 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+}
+
+.procore-project-block .procure-project-list span {
+    display: block;
+}
+
+.procore-project-block .procure-project-list span li {
+    list-style: none;
+    margin: 0 15px;
+    padding: 0;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+
+}
+
+.procore-project-block .procure-project-list span li label {
+    color: #A7A7A7;
+    font-weight: normal !important;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.procore-project-block .procure-project-list span li input {
+    margin: 0 5px 0 0;
+    height: 11px;
+}
+
+.bim360-import-modal .modal-dialog {
+    width: 600px;
+}
+
+.common-modal, .bim360-import-modal {
+    text-align: center;
+    padding: 0 !important;
+}
+
+.common-modal .modal-dialog, .bim360-import-modal .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.modal-dialog .modal-title {
+    font-size: 17px;
+}
+
+.common-modal:before, .bim360-import-modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+}
+
+.custom-link a {
+    color: #000 !important;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.table > thead > tr > th {
+    padding: 5px;
+    max-width: 100px;
+}
+
+.table > tbody > tr > td {
+    padding: 1px;
+}
+
+.table {
+    width: auto;
+    min-width: 500px;
+}
+
+#exportThis .tick line {
+    stroke: #000000;
+    opacity: .2;
+    stroke-width: 2;
+}
+#exportPPC svg{
+    min-height: 500px;
+}
+
+#exportPPC svg text{
+    font-size: 14px;
+    text-anchor: unset !important;
+}
+#exportThis rect.bar{
+    transform: translateX(9px);
+}
+
+
+#exportThis .tick:first-child line{
+    opacity: .4;
+}
+
+.create-project-modal.import-task-dialog .modal-dialog{
+    width: 1000px;
+
+}
+
+.advace-options-upload-task{
+    text-align: left;
+}
+
+.sel{
+    background-color: #676869;
+}
+
+/*custom accordian */
+
+.panel-default.custom-panel{
+    background: transparent !important;
+    border: none !important;
+}
+.panel-default.custom-panel > .panel-heading{
+    color: #fff;
+    background-color: rgba(245, 245, 245, 0.2);
+}
+
+.milestone-risk {
+    height: 45px;
+    width: 45px;
+    background-color: #3797e3;
+    transform: rotate(45deg);
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.custom-accordian {
+    margin-top: -4px;
+    font-size: 30px;
+}
+
+.custom-accordian:hover {
+    color: #3797e3;
+}
+
+.link-custom {
+    color: #A1A8AC;
+    font-size: 15px;
+}
+
+.link-custom:hover {
+    color: #3797e3;
+}
+
+.model-gantt-header{
+    padding: 0px 10px;
+    font-size: 15px;
+    width: 27%;
+    display: flex;
+    justify-content: space-between;
+    min-height: 24px;
+    max-height: 24px;
+}
+
+.gantt-filter{
+    min-width: unset;
+    min-height: unset;
+    background: #fff !important;
+
+}
+
+.dropdown-menu.gantt-filter li>a{
+    color: #fff;
+}
+
+.gantt-filter li > a:hover {
+    background: #f5f5f5;
+    color: #000;
+}
+
+.filter-active {
+    background: lightgray;
+}
+
+.filter-active a {
+    color: #fff;
+}
+
+.model-gantt > li > a{
+    padding: 0;
+}
+
+#model-gantt-searchfield::placeholder {
+    color: #fff;
+}
+
+#model-gantt-searchfield{
+    background: lightgray !important;
+    min-height: 20px !important;
+}
+
+#handsontable-search::placeholder {
+    color: #828282;
+}
+
+#handsontable-search {
+    background: #fff !important;
+    width: 55% !important;
+    margin-left: 10px !important;
+    min-height: 30px;
+}
+
+.page-selected {
+    background: rgba(70, 161, 226, 0.7);
+}
+
+.simple-dropdown .date-picker ul.dropdown-menu{
+    top: -55px !important;
+    left: 100px !important;
+}
+
+/*switch for enable and disable*/
+.switch input {
+    display:none;
+}
+.switch {
+    display:inline-block;
+    width:40px;
+    height:20px;
+    transform:translateY(10%);
+    position:relative;
+}
+
+.slider {
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:-10px;
+    border-radius:30px;
+    box-shadow:0 0 0 2px #777, 0 0 4px #777;
+    cursor:pointer;
+    border:4px solid transparent;
+    overflow:hidden;
+    transition:.4s;
+}
+.slider:before {
+    position:absolute;
+    content:"";
+    width:100%;
+    height:100%;
+    background:#777;
+    border-radius:30px;
+    transform:translateX(-30px);
+    transition:.4s;
+}
+
+input:checked + .slider:before {
+    transform:translateX(30px);
+    background:limeGreen;
+}
+input:checked + .slider {
+    box-shadow:0 0 0 2px limeGreen,0 0 2px limeGreen;
+}
+
+.webix_accordionitem_label {
+    font-family: "proxima-nova", Helvetica, Arial, sans-serif !important;
+}
+
+.side-by-side-view {
+    width: 50%;
+}
+
+.model-properties-edit {
+   height: 73% !important;
+}
+
+.model-properties-not-edit {
+    height: 45% !important;
+}
+
+.threeView .modal-body-model-translation .form-control {
+    width:225px !important;
+    margin: 5px 0;
+}
+.threeView .modal-body-model-translation .custom-label {
+    margin: 10px 0;
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: not-allowed !important;
+}
