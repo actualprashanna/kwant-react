@@ -1,0 +1,29 @@
+@media (max-width: "1090px") {
+  .login-page {
+    .login {
+      &-left {
+        width: 50%;
+        margin: auto;
+      }
+
+      &-right {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: "850px") {
+  .login-page {
+    .login {
+      &-left {
+        width: 9 0%;
+        margin: auto;
+      }
+
+      &-right {
+        display: none;
+      }
+    }
+  }
+}
