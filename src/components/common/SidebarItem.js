@@ -1,21 +1,39 @@
-import React, { Component, Fragment } from "react";
+import React, { Component, createRef } from "react";
 
 class SidebarItem extends Component {
+  constructor(props) {
+    super(props);
+    this.titlePopup = createRef();
+    this.sideLink = createRef();
+  }
+
+  handleMouseOver() {
+    this.titlePopup.current.style.display = "initial";
+  }
+
+  handleMouseOut() {
+    this.titlePopup.current.style.display = "none";
+  }
+
   render() {
     return (
       <li
-        className="selected"
-        onMouseOver={(e) => e.stopPropagation()}
-        onMouseOut={(e) => e.stopPropagation()}
-        key={this.props.index}>
-        <i
-          className={`fab fa-${this.props.title}`}
-          onMouseOver={() => {
-            console.log("touched");
-          }}
-          onMouseOut={() => {
-            console.log("not touched");
-          }}></i>
+        onMouseOver={(e) => this.handleMouseOver()}
+        onMouseOut={(e) => this.handleMouseOut()}
+        className={`${this.props.item.selected}`}>
+        <i className="fab fa-react"></i>
+        <div
+          ref={this.titlePopup}
+          style={{
+            color: "#fff",
+            position: "absolute",
+            left: "10vh",
+            backgroundColor: "#000",
+            display: "none",
+            padding: "3px 7px",
+          }}>
+          {this.props.item.title}
+        </div>
       </li>
     );
   }

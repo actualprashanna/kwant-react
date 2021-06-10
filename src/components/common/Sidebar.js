@@ -1,129 +1,96 @@
-import React from "react";
+import React, { Component } from "react";
 import SidebarItem from "./SidebarItem";
 
-const Sidebar = () => {
-  const items = [
-    {
-      title: "Dashboard",
-      img: "react",
-    },
-    {
-      title: "Schedule",
-      img: "react",
-    },
-    {
-      title: "Building Information Model",
-      img: "react",
-    },
-    {
-      title: "Graphs",
-      img: "react",
-    },
-    {
-      title: "Daily Tracking",
-      img: "react",
-    },
-    {
-      title: "Team And Resources",
-      img: "react",
-    },
-    {
-      title: "Look Ahead",
-      img: "react",
-    },
-  ];
+class Sidebar extends Component {
+  state = {
+    items: [
+      {
+        title: "Dashboard",
+        img: "react",
+        touched: false,
+        selected: "selected",
+      },
+      {
+        title: "Dashboard1",
+        img: "react",
+        touched: false,
+        selected: "",
+      },
+      {
+        title: "Dashboard2",
+        img: "react",
+        touched: false,
+        selected: "",
+      },
+      {
+        title: "Dashboard3",
+        img: "react",
+        touched: false,
+        selected: "",
+      },
+      {
+        title: "Dashboard4",
+        img: "react",
+        touched: false,
+        selected: "",
+      },
+      {
+        title: "Dashboard5",
+        img: "react",
+        touched: false,
+        selected: "",
+      },
+      {
+        title: "Dashboard6",
+        img: "react",
+        touched: false,
+        selected: "",
+      },
+      {
+        title: "Dashboard7",
+        img: "react",
+        touched: false,
+        selected: "",
+      },
+    ],
+  };
 
-  return (
-    <div className="sideBarMain">
-      <ul>
-        <li
-          className="selected"
-          onMouseOver={(e) => e.stopPropagation()}
-          onMouseOut={(e) => e.stopPropagation()}>
-          <i
-            className="fab fa-react"
-            onMouseOver={() => {
-              console.log("touched");
-            }}
-            onMouseOut={() => {
-              console.log("not touched");
-            }}></i>
-        </li>
-        <li
-          onMouseOver={(e) => e.stopPropagation()}
-          onMouseOut={(e) => e.stopPropagation()}>
-          <i
-            className="fab fa-react"
-            onMouseOver={() => {
-              console.log("touched");
-            }}
-            onMouseOut={() => {
-              console.log("not touched");
-            }}></i>
-        </li>
-        <li
-          onMouseOver={(e) => e.stopPropagation()}
-          onMouseOut={(e) => e.stopPropagation()}>
-          <i
-            className="fab fa-react"
-            onMouseOver={() => {
-              console.log("touched");
-            }}
-            onMouseOut={() => {
-              console.log("not touched");
-            }}></i>
-        </li>
-        <li
-          onMouseOver={(e) => e.stopPropagation()}
-          onMouseOut={(e) => e.stopPropagation()}>
-          <i
-            className="fab fa-react"
-            onMouseOver={() => {
-              console.log("touched");
-            }}
-            onMouseOut={() => {
-              console.log("not touched");
-            }}></i>
-        </li>
-        <li
-          onMouseOver={(e) => e.stopPropagation()}
-          onMouseOut={(e) => e.stopPropagation()}>
-          <i
-            className="fab fa-react"
-            onMouseOver={() => {
-              console.log("touched");
-            }}
-            onMouseOut={() => {
-              console.log("not touched");
-            }}></i>
-        </li>
-        <li
-          onMouseOver={(e) => e.stopPropagation()}
-          onMouseOut={(e) => e.stopPropagation()}>
-          <i
-            className="fab fa-react"
-            onMouseOver={() => {
-              console.log("touched");
-            }}
-            onMouseOut={() => {
-              console.log("not touched");
-            }}></i>
-        </li>
-        <li
-          onMouseOver={(e) => e.stopPropagation()}
-          onMouseOut={(e) => e.stopPropagation()}>
-          <i
-            className="fab fa-react"
-            onMouseOver={() => {
-              console.log("touched");
-            }}
-            onMouseOut={() => {
-              console.log("not touched");
-            }}></i>
-        </li>
-      </ul>
-    </div>
-  );
-};
+  handleMouseOver(e) {
+    e.stopPropagation();
+    this.setState({ items: [{ touched: true }] });
+  }
+
+  handleMouseOut(e) {
+    e.stopPropagation();
+    this.setState({ items: [{ touched: false }] });
+  }
+
+  renderTitle(title) {
+    return (
+      <div
+        className="menuTitle"
+        style={{
+          position: "absolute",
+          top: `${title.top}px`,
+          left: `${title.left}px`,
+          backgroundColor: "red",
+        }}>
+        Dashboard
+      </div>
+    );
+  }
+
+  render() {
+    return (
+      <div className="sideBarMain">
+        <ul>
+          {this.state.items.map((item, index) => {
+            return <SidebarItem item={item} key={index} />;
+          })}
+        </ul>
+      </div>
+    );
+  }
+}
 
 export default Sidebar;
