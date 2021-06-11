@@ -1,5 +1,12 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import SidebarItem from "./SidebarItem";
+import DashboardIcon from "./icons/DashboardIcon";
+import ScheduleIcon from "./icons/ScheduleIcon";
+import ModelIcon from "./icons/ModelIcon";
+import GraphsIcon from "./icons/GraphsIcon";
+import DailyIcon from "./icons/DailyIcon";
+import TeamIcon from "./icons/TeamIcon";
+import LookIcon from "./icons/LookIcon";
 
 class Sidebar extends Component {
   state = {
@@ -9,48 +16,49 @@ class Sidebar extends Component {
         img: "react",
         touched: false,
         selected: "selected",
+        icon: <DashboardIcon />,
       },
       {
-        title: "Dashboard1",
+        title: "Schedule",
         img: "react",
         touched: false,
         selected: "",
+        icon: <ScheduleIcon />,
       },
       {
-        title: "Dashboard2",
+        title: "Building Information Model",
         img: "react",
         touched: false,
         selected: "",
+        icon: <ModelIcon />,
       },
       {
-        title: "Dashboard3",
+        title: "Graphs",
         img: "react",
         touched: false,
         selected: "",
+        icon: <GraphsIcon />,
       },
       {
-        title: "Dashboard4",
+        title: "Daily Tracking",
         img: "react",
         touched: false,
         selected: "",
+        icon: <DailyIcon />,
       },
       {
-        title: "Dashboard5",
+        title: "Team And Resources",
         img: "react",
         touched: false,
         selected: "",
+        icon: <TeamIcon />,
       },
       {
-        title: "Dashboard6",
+        title: "Look Ahead",
         img: "react",
         touched: false,
         selected: "",
-      },
-      {
-        title: "Dashboard7",
-        img: "react",
-        touched: false,
-        selected: "",
+        icon: <LookIcon />,
       },
     ],
   };
