@@ -1,0 +1,29 @@
+.otpCheckPage {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e9e9e9; }
+  .otpCheckPage .container {
+    color: #000;
+    height: 90%;
+    background-color: #ddd;
+    width: 30%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.3rem; }
+    .otpCheckPage .container .formWrapper {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.5rem; }
+      .otpCheckPage .container .formWrapper button {
+        margin-top: 1rem;
+        padding: 1rem;
+        font-size: 1.5rem; }
+      .otpCheckPage .container .formWrapper input {
+        background-color: #e8f0fe; }
