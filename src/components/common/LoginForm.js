@@ -4,51 +4,65 @@ import bim from "../assets/bim-logo.png";
 import { Field, reduxForm } from "redux-form";
 
 class LoginForm extends Component {
-  // renders error
   renderError({ error, touched }) {
     if (touched && error) {
       return (
-        <div className="invalid-feedback">
+        <div className="error">
           <div>{error}</div>
         </div>
       );
     }
   }
 
-  //renders input fields
-  renderInput = ({ input, label, meta, type }) => {
+  renderInput = ({ input, meta, type, placeholder }) => {
     const className = `form-group`;
     return (
       <div className={className}>
-        <input {...input} className="form-control" type={type} />
+        <input
+          {...input}
+          className="form-control"
+          type={type}
+          placeholder={placeholder}
+        />
         {this.renderError(meta)}
       </div>
     );
   };
 
-  //submit handler
-  onSubmit = (formValues) => {
-    this.props.onSubmit(formValues);
+  renderCheckbox = ({ input, meta, type, placeholder }) => {
+    return (
+      <input
+        {...input}
+        className="form-control"
+        type={type}
+        placeholder={placeholder}
+      />
+    );
+  };
+
+  onSubmit = () => {
+    console.log("submitted");
   };
 
   render() {
     return (
-      <form className="ui form">
-        {/* login form */}
+      <form className="ui form" onSubmit={this.onSubmit()}>
         <div className="formWrapper">
           <Field
             type="email"
             name="username"
             placeholder="Email"
             component={this.renderInput}
+            className="input"
           />
           <Field
             type="password"
             name="password"
             placeholder="Password"
             component={this.renderInput}
+            className="input"
           />
-          {/* remember me checkbox */}
+
           <div
             style={{
               display: "flex",
@@ -56,16 +70,16 @@ class LoginForm extends Component {
               alignContent: "center",
               width: "100%",
             }}>
-            <div class="inline ui checkbox">
-              <Field type="checkbox" tabindex="0" />
+            <div class="ui checkbox">
+              <Field type="checkbox" component={this.renderCheckbox} />
               <label>
                 <h3 style={{ fontSize: "1.2rem" }}>Remember Me</h3>
               </label>
             </div>
-            {/* forgot password. */}
+
             <div>Forgot Password</div>
           </div>
-          {/* Sign in Button */}
+
           <div className="buttonWrapper">
             <button
               class="ui signin button"
@@ -89,7 +103,6 @@ class LoginForm extends Component {
                 class="section-separator"
                 style={{ marginLeft: "10px" }}></div>
             </div>
-            {/* Sign in options */}
             <button
               className="link-btns"
               style={{
@@ -112,7 +125,6 @@ class LoginForm extends Component {
   }
 }
 
-// validation
 const validate = (formValues) => {
   const errors = {};
 

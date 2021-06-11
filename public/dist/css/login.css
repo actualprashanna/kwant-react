@@ -14,8 +14,6 @@
     height: 100%; }
     .login-page .login-left .welcome-text {
       font-size: 30px; }
-    .login-page .login-left div {
-      padding-top: 1rem; }
     .login-page .login-left .form {
       font-size: 1.5rem;
       width: 73%; }
@@ -34,6 +32,11 @@
           border-radius: 4px;
           margin: 0.5rem 0;
           background-color: #e8f0fe; }
+        .login-page .login-left .form .formWrapper .error {
+          color: red;
+          background-color: white; }
+        .login-page .login-left .form .formWrapper .form-group {
+          width: 100%; }
         .login-page .login-left .form .formWrapper .buttonWrapper {
           margin: 10px 0;
           display: flex;

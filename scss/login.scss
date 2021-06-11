@@ -20,9 +20,9 @@
         font-size: 30px;
       }
 
-      div {
-        padding-top: 1rem;
-      }
+      // div {
+      //   padding-top: 1rem;
+      // }
 
       .form {
         font-size: 1.5rem;
@@ -43,6 +43,15 @@
             border-radius: 4px;
             margin: 0.5rem 0;
             background-color: #e8f0fe;
+          }
+
+          .error {
+            color: red;
+            background-color: white;
+          }
+
+          .form-group {
+            width: 100%;
           }
 
           .buttonWrapper {
