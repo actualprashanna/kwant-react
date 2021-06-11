@@ -2,6 +2,7 @@ import React from "react";
 import Sidebar from "./Sidebar";
 import Header from "./Header";
 
+// Page Wrapper contains header and sidebar
 const PageWrapper = (props) => {
   return (
     <div>

@@ -8,6 +8,7 @@ import OtpCheck from "../components/login/OtpCheck";
 const App = () => {
   return (
     <BrowserRouter>
+      {/* Routes */}
       <Route path="/" exact component={Login} />
       <Route path="/dashboard" exact component={DashBoard} />
       <Route path="/help" exact component={Help} />

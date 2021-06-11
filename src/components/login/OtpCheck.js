@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import { Field, reduxForm } from "redux-form";
 import logo from "../assets/logo-uninterlaced.png";
 
+// Page for otp check
 class OtpCheck extends Component {
+  // renders error
   renderError({ error, touched }) {
     if (touched && error) {
       return (
@@ -13,6 +15,7 @@ class OtpCheck extends Component {
     }
   }
 
+  // renders input component
   renderInput = ({ input, meta, type, placeholder, inputmode, maxLength }) => {
     const className = `form-group`;
     return (
@@ -30,6 +33,7 @@ class OtpCheck extends Component {
     );
   };
 
+  // submit handler
   onSubmit = (formValues) => {
     this.props.onSubmit(formValues);
   };
@@ -38,6 +42,7 @@ class OtpCheck extends Component {
     return (
       <div className="otpCheckPage">
         <div className="container">
+          {/* logo */}
           <div className="logo" style={{ margin: "40px 0" }}>
             <img src={logo} alt="logo" />
           </div>
@@ -46,8 +51,10 @@ class OtpCheck extends Component {
             style={{ padding: "10px", fontSize: "1.5rem", width: "70%" }}>
             Enter the code generated on your mobile device below to log in!
           </div>
+          {/* form start */}
           <form className="ui form">
             <div className="formWrapper">
+              {/* input field */}
               <Field
                 type="text"
                 name="otpcode"
@@ -56,7 +63,9 @@ class OtpCheck extends Component {
                 maxLength={4}
                 inputmode="numeric"
               />
+              {/* resend */}
               <button className="resendBtn ui blue button">Resend</button>
+              {/* submit */}
               <button type="submit" className="ui blue button">
                 Submit
               </button>
@@ -68,6 +77,7 @@ class OtpCheck extends Component {
   }
 }
 
+// validation
 const validate = (formValues) => {
   const errors = {};
 

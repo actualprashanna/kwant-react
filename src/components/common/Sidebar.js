@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import SidebarItem from "./SidebarItem";
+
+// Icons
 import DashboardIcon from "./icons/DashboardIcon";
 import ScheduleIcon from "./icons/ScheduleIcon";
 import ModelIcon from "./icons/ModelIcon";
@@ -8,8 +10,10 @@ import DailyIcon from "./icons/DailyIcon";
 import TeamIcon from "./icons/TeamIcon";
 import LookIcon from "./icons/LookIcon";
 
+// Sidebar component
 class Sidebar extends Component {
   state = {
+    // options in sidebar
     items: [
       {
         title: "Dashboard",
@@ -63,35 +67,11 @@ class Sidebar extends Component {
     ],
   };
 
-  handleMouseOver(e) {
-    e.stopPropagation();
-    this.setState({ items: [{ touched: true }] });
-  }
-
-  handleMouseOut(e) {
-    e.stopPropagation();
-    this.setState({ items: [{ touched: false }] });
-  }
-
-  renderTitle(title) {
-    return (
-      <div
-        className="menuTitle"
-        style={{
-          position: "absolute",
-          top: `${title.top}px`,
-          left: `${title.left}px`,
-          backgroundColor: "red",
-        }}>
-        Dashboard
-      </div>
-    );
-  }
-
   render() {
     return (
       <div className="sideBarMain">
         <ul>
+          {/* maps the sidebar menu items */}
           {this.state.items.map((item, index) => {
             return <SidebarItem item={item} key={index} />;
           })}
