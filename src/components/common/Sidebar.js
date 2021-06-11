@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import SidebarItem from "./SidebarItem";
 import DashboardIcon from "./icons/DashboardIcon";
 import ScheduleIcon from "./icons/ScheduleIcon";
