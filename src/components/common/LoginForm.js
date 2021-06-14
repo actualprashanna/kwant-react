@@ -118,7 +118,9 @@ class LoginForm extends Component {
               <img src={bim} alt="bim" />
               Sign In With BIM
             </button>
-            <button className="link-btns-blue">
+            <button
+              className="link-btns-blue"
+              onClick={(e) => e.preventDefault()}>
               <Link to="/signup">Sign Up</Link>
             </button>
           </div>

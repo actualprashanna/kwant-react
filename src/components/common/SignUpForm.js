@@ -1,19 +1,29 @@
-import React, { Component } from "react";
+import React, { Component, createRef } from "react";
 import procore from "../assets/procore-sm-logo.png";
 import bim from "../assets/bim-logo.png";
 import { Field, reduxForm } from "redux-form";
 import { Link } from "react-router-dom";
 
 class SignUpForm extends Component {
-  renderError({ error, touched }) {
+  constructor(props) {
+    super(props);
+    this.signUpBtn = createRef();
+  }
+
+  renderError = ({ error, touched }) => {
     if (touched && error) {
+      this.signUpBtn.current.disabled = true;
       return (
-        <div className="error">
+        <div className="error" style={{ fontSize: "12px" }}>
           <div>{error}</div>
         </div>
       );
+    } else {
+      if (this.signUpBtn.current) {
+        this.signUpBtn.current.disabled = false;
+      }
     }
-  }
+  };
 
   renderInput = ({ input, meta, type, placeholder }) => {
     const className = `form-group`;
@@ -27,17 +37,6 @@ class SignUpForm extends Component {
         />
         {this.renderError(meta)}
       </div>
-    );
-  };
-
-  renderCheckbox = ({ input, meta, type, placeholder }) => {
-    return (
-      <input
-        {...input}
-        className="form-control"
-        type={type}
-        placeholder={placeholder}
-      />
     );
   };
 
@@ -156,12 +155,9 @@ class SignUpForm extends Component {
 
           <h4 style={{ fontSize: "14px", textAlign: "center" }}>
             By clicking "Sign Up" you agree to onTarget's{" "}
-            <a
-              href="https://platform.ontargetcloud.com/#/terms"
-              target="_blank"
-              rel="noreferrer">
+            <Link to="/terms" target="_blank">
               Terms {"&"} Conditions
-            </a>
+            </Link>
           </h4>
 
           <div className="buttonWrapper">
@@ -174,7 +170,8 @@ class SignUpForm extends Component {
                 borderRadius: "20px",
                 backgroundColor: "#43A1E2",
                 color: "#fff",
-              }}>
+              }}
+              ref={this.signUpBtn}>
               Sign Up
             </button>
             <div className="seperator">
@@ -214,11 +211,27 @@ const validate = (formValues) => {
   const errors = {};
 
   if (!formValues.username) {
-    errors.username = "Username is required";
+    errors.username = "Email is required";
   }
 
   if (!formValues.password) {
     errors.password = "Password is required";
+  }
+
+  if (!formValues.firstName) {
+    errors.firstName = "First Name is required";
+  }
+
+  if (!formValues.lastName) {
+    errors.lastName = "Last Name is required";
+  }
+
+  if (!formValues.countryCode) {
+    errors.countryCode = "Country Code is required";
+  }
+
+  if (!formValues.phone) {
+    errors.phone = "Phone is required";
   }
 
   return errors;

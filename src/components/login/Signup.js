@@ -5,7 +5,7 @@ import SignUpForm from "../common/SignUpForm";
 class Signup extends Component {
   render() {
     return (
-      <div class="signup-page">
+      <div className="signup-page">
         <div className="signup-left">
           <div className="logo" style={{ margin: "10px 0 30px 0" }}>
             <img src={logo} alt="logo" />
