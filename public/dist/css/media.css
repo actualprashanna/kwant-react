@@ -1,0 +1,25 @@
+@media (max-width: 1090px) {
+  .login-page .login-left,
+  .login-page .signup-left,
+  .signup-page .login-left,
+  .signup-page .signup-left {
+    width: 50%;
+    margin: auto; }
+  .login-page .login-right,
+  .login-page .signup-right,
+  .signup-page .login-right,
+  .signup-page .signup-right {
+    display: none; } }
+
+@media (max-width: 850px) {
+  .login-page .login-left,
+  .login-page .signup-left,
+  .signup-page .login-left,
+  .signup-page .signup-left {
+    width: 9 0%;
+    margin: auto; }
+  .login-page .login-right,
+  .login-page .signup-right,
+  .signup-page .login-right,
+  .signup-page .signup-right {
+    display: none; } }

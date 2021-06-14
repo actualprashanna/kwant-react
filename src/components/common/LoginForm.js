@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import procore from "../assets/procore-sm-logo.png";
 import bim from "../assets/bim-logo.png";
 import { Field, reduxForm } from "redux-form";
+import { Link } from "react-router-dom";
 
 class LoginForm extends Component {
   renderError({ error, touched }) {
@@ -117,7 +118,9 @@ class LoginForm extends Component {
               <img src={bim} alt="bim" />
               Sign In With BIM
             </button>
-            <button className="link-btns-blue">Sign Up</button>
+            <button className="link-btns-blue">
+              <Link to="/signup">Sign Up</Link>
+            </button>
           </div>
         </div>
       </form>
