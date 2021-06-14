@@ -75,19 +75,23 @@ class LoginForm extends Component {
               alignContent: "center",
               width: "100%",
             }}>
-            <div class="ui checkbox">
-              <Field type="checkbox" component={this.renderCheckbox} />
+            <div className="ui checkbox">
+              <Field
+                type="checkbox"
+                name="remember"
+                component={this.renderCheckbox}
+              />
               <label>
                 <h3 style={{ fontSize: "1.2rem" }}>Remember Me</h3>
               </label>
             </div>
 
-            <div>Forgot Password</div>
+            <Link to="/forgotpassword">Forgot Password</Link>
           </div>
 
           <div className="buttonWrapper">
             <button
-              class="ui signin button"
+              className="ui signin button"
               control-id="ControlID-104"
               type="submit"
               style={{
@@ -102,11 +106,11 @@ class LoginForm extends Component {
             {/* Other sign in options */}
             <div className="seperator">
               <div
-                class="section-separator"
+                className="section-separator"
                 style={{ marginRight: "10px" }}></div>{" "}
               Or{" "}
               <div
-                class="section-separator"
+                className="section-separator"
                 style={{ marginLeft: "10px" }}></div>
             </div>
             <button

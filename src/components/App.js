@@ -6,6 +6,7 @@ import DashBoard from "./dashboard/Dashboard";
 import OtpCheck from "../components/login/OtpCheck";
 import Signup from "./login/Signup";
 import Terms from "./terms/Terms";
+import ForgotPassword from "./login/ForgotPassword";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Route path="/otpcheck" exact component={OtpCheck} />
       <Route path="/signup" exact component={Signup} />
       <Route path="/terms" exact component={Terms} />
+      <Route path="/forgotpassword" exact component={ForgotPassword} />
     </BrowserRouter>
   );
 };

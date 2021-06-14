@@ -5,7 +5,7 @@ import logo from "../assets/logo-uninterlaced.png";
 class Login extends Component {
   render() {
     return (
-      <div class="login-page">
+      <div className="login-page">
         <div className="login-left">
           <div className="logo" style={{ margin: "40px 0" }}>
             <img src={logo} alt="logo" />
