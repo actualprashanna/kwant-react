@@ -7,12 +7,12 @@ import { Link } from "react-router-dom";
 class SignUpForm extends Component {
   constructor(props) {
     super(props);
-    this.signUpBtn = createRef();
+    this.signUpBtn = createRef(); //reference to sign up button
   }
 
   renderError = ({ error, touched }) => {
     if (touched && error) {
-      this.signUpBtn.current.disabled = true;
+      this.signUpBtn.current.disabled = true; //disables sigun button if there is error
       return (
         <div className="error" style={{ fontSize: "12px" }}>
           <div>{error}</div>
@@ -20,12 +20,14 @@ class SignUpForm extends Component {
       );
     } else {
       if (this.signUpBtn.current) {
+        //enables sign up button if no error
         this.signUpBtn.current.disabled = false;
       }
     }
   };
 
   renderInput = ({ input, meta, type, placeholder }) => {
+    //renders input
     const className = `form-group`;
     return (
       <div className={className}>
@@ -41,12 +43,14 @@ class SignUpForm extends Component {
   };
 
   onSubmit = () => {
+    //submission handler
     console.log("submitted");
   };
 
   render() {
     return (
       <form className="ui form" onSubmit={this.onSubmit()}>
+        {/* form */}
         <div className="formWrapper">
           <div className="field">
             <div className="two fields">
@@ -123,6 +127,7 @@ class SignUpForm extends Component {
             className="input"
           />
 
+          {/* Password Condition */}
           <div
             className="vertical-bottom password-conditions"
             style={{ width: "100%", marginTop: "10px" }}>
@@ -153,6 +158,7 @@ class SignUpForm extends Component {
             </ul>
           </div>
 
+          {/* Term */}
           <h4 style={{ fontSize: "14px", textAlign: "center" }}>
             By clicking "Sign Up" you agree to onTarget's{" "}
             <Link to="/terms" target="_blank">
@@ -174,6 +180,7 @@ class SignUpForm extends Component {
               ref={this.signUpBtn}>
               Sign Up
             </button>
+            {/* Other sign up options */}
             <div className="seperator">
               <div
                 className="section-separator"
@@ -197,6 +204,7 @@ class SignUpForm extends Component {
               <img src={bim} alt="bim" />
               Sign Up With BIM
             </button>
+            {/* Go to sign in */}
             <h4 style={{ fontSize: "14px", textAlign: "center" }}>
               Already have an account? <Link to="/">Sign In</Link>
             </h4>
@@ -207,6 +215,7 @@ class SignUpForm extends Component {
   }
 }
 
+// validation
 const validate = (formValues) => {
   const errors = {};
 

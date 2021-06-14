@@ -5,6 +5,7 @@ import { Field, reduxForm } from "redux-form";
 import { Link } from "react-router-dom";
 
 class LoginForm extends Component {
+  // renders errors
   renderError({ error, touched }) {
     if (touched && error) {
       return (
@@ -15,6 +16,7 @@ class LoginForm extends Component {
     }
   }
 
+  // renders input
   renderInput = ({ input, meta, type, placeholder }) => {
     const className = `form-group`;
     return (
@@ -30,6 +32,7 @@ class LoginForm extends Component {
     );
   };
 
+  // renders checkbox
   renderCheckbox = ({ input, meta, type, placeholder }) => {
     return (
       <input
@@ -41,6 +44,7 @@ class LoginForm extends Component {
     );
   };
 
+  // submit handler
   onSubmit = () => {
     console.log("submitted");
   };
@@ -63,7 +67,7 @@ class LoginForm extends Component {
             component={this.renderInput}
             className="input"
           />
-
+          {/* remember me */}
           <div
             style={{
               display: "flex",
@@ -95,6 +99,7 @@ class LoginForm extends Component {
               }}>
               Sign In
             </button>
+            {/* Other sign in options */}
             <div className="seperator">
               <div
                 class="section-separator"
@@ -118,6 +123,7 @@ class LoginForm extends Component {
               <img src={bim} alt="bim" />
               Sign In With BIM
             </button>
+            {/* Sign up */}
             <button
               className="link-btns-blue"
               onClick={(e) => e.preventDefault()}>
@@ -130,6 +136,7 @@ class LoginForm extends Component {
   }
 }
 
+// validation
 const validate = (formValues) => {
   const errors = {};
 
