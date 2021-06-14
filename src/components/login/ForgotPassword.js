@@ -1,4 +1,4 @@
-import React, { Component, createRef } from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import { Field, reduxForm } from "redux-form";

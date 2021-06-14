@@ -149,8 +149,7 @@
           font-size: 14px;
           line-height: 1.42857143;
           border-radius: 4px;
-          margin: 0;
-          background-color: #e8f0fe; }
+          margin: 0; }
         .signup-page .signup-left .form .formWrapper .field {
           margin: 0; }
         .signup-page .signup-left .form .formWrapper .error {
@@ -222,6 +221,34 @@
   background-color: blue;
   width: 100%;
   color: white; }
+
+.sidebarHelp {
+  position: fixed;
+  left: 0;
+  top: 7vh;
+  width: 250px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+  .sidebarHelp a {
+    text-decoration: none; }
+  .sidebarHelp .container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .sidebarHelp .container .link {
+      padding: 1rem; }
+    .sidebarHelp .container ul li:hover {
+      background-color: #e5e5e5; }
+
+.helpContent {
+  position: fixed;
+  left: 300px;
+  overflow-y: scroll; }
 
 .sideBarMain {
   position: fixed;

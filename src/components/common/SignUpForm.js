@@ -5,6 +5,12 @@ import { Field, reduxForm } from "redux-form";
 import { Link } from "react-router-dom";
 
 class SignUpForm extends Component {
+  state = {
+    initialValues: {
+      countryCode: "+1",
+    },
+  };
+
   constructor(props) {
     super(props);
     this.signUpBtn = createRef(); //reference to sign up button
@@ -12,7 +18,9 @@ class SignUpForm extends Component {
 
   renderError = ({ error, touched }) => {
     if (touched && error) {
-      this.signUpBtn.current.disabled = true; //disables sigun button if there is error
+      if (this.signUpBtn.current) {
+        this.signUpBtn.current.disabled = true; //disables sigun button if there is error
+      }
       return (
         <div className="error" style={{ fontSize: "12px" }}>
           <div>{error}</div>
@@ -27,6 +35,22 @@ class SignUpForm extends Component {
   };
 
   renderInput = ({ input, meta, type, placeholder }) => {
+    //renders input
+    const className = `form-group`;
+    return (
+      <div className={className}>
+        <input
+          {...input}
+          className="form-control"
+          type={type}
+          placeholder={placeholder}
+        />
+        {this.renderError(meta)}
+      </div>
+    );
+  };
+
+  renderCountryCode = ({ input, meta, type, placeholder, defaultValue }) => {
     //renders input
     const className = `form-group`;
     return (
@@ -90,8 +114,8 @@ class SignUpForm extends Component {
                   type="text"
                   name="countryCode"
                   maxlength="4"
-                  placeholder="Country Code"
-                  component={this.renderInput}
+                  placeholder={this.state.initialValues.countryCode}
+                  component={this.renderCountryCode}
                   className="input"
                   defaultValue="+1"
                 />
@@ -249,4 +273,5 @@ const validate = (formValues) => {
 export default reduxForm({
   form: "Form",
   validate,
+  enableReinitialize: true,
 })(SignUpForm);

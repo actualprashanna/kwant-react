@@ -18,6 +18,48 @@
   color: white;
 }
 
+.sidebarHelp {
+  position: fixed;
+  left: 0;
+  top: 7vh;
+  width: 250px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    text-decoration: none;
+  }
+
+  .container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .link {
+      padding: 1rem;
+    }
+
+    ul {
+      li {
+        &:hover {
+          background-color: #e5e5e5;
+        }
+      }
+    }
+  }
+}
+
+.helpContent {
+  position: fixed;
+  left: 300px;
+  overflow-y: scroll;
+}
+
 .sideBarMain {
   position: fixed;
   left: 0;
