@@ -22,7 +22,7 @@
   position: fixed;
   left: 0;
   top: 7vh;
-  width: 250px;
+  width: 350px;
   height: 90vh;
   display: flex;
   flex-direction: column;
@@ -31,6 +31,13 @@
 
   a {
     text-decoration: none;
+    color: #000;
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  ul {
+    list-style-type: symbols();
   }
 
   .container {
@@ -40,24 +47,54 @@
     flex-direction: column;
     align-items: center;
 
+    .title {
+      margin-top: 40px;
+      font-size: 2rem;
+    }
+
     .link {
       padding: 1rem;
     }
 
-    ul {
-      li {
-        &:hover {
-          background-color: #e5e5e5;
+    li {
+      padding: 10px 0;
+      font-size: 1.5rem;
+      cursor: pointer;
+      &:hover {
+        background-color: #f6f6f6;
+      }
+
+      ul {
+        margin-left: 30px;
+        li {
+          background-color: #fff;
+          margin-left: 30px;
         }
       }
+
+      a {
+        width: 100%;
+      }
+    }
+  }
+
+  .archived {
+    cursor: pointer;
+    width: 100%;
+    padding: 10px 0;
+    margin: auto;
+    display: flex;
+    text-align: center;
+
+    &:hover {
+      background-color: #f6f6f6;
     }
   }
 }
 
 .helpContent {
-  position: fixed;
-  left: 300px;
-  overflow-y: scroll;
+  position: absolute;
+  left: 350px;
 }
 
 .sideBarMain {

@@ -226,29 +226,56 @@
   position: fixed;
   left: 0;
   top: 7vh;
-  width: 250px;
+  width: 350px;
   height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between; }
   .sidebarHelp a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #000;
+    padding: 10px 0;
+    width: 100%; }
+  .sidebarHelp ul {
+    list-style-type: symbols(); }
   .sidebarHelp .container {
     width: 90%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center; }
+    .sidebarHelp .container .title {
+      margin-top: 40px;
+      font-size: 2rem; }
     .sidebarHelp .container .link {
       padding: 1rem; }
-    .sidebarHelp .container ul li:hover {
-      background-color: #e5e5e5; }
+    .sidebarHelp .container li {
+      padding: 10px 0;
+      font-size: 1.5rem;
+      cursor: pointer; }
+      .sidebarHelp .container li:hover {
+        background-color: #f6f6f6; }
+      .sidebarHelp .container li ul {
+        margin-left: 30px; }
+        .sidebarHelp .container li ul li {
+          background-color: #fff;
+          margin-left: 30px; }
+      .sidebarHelp .container li a {
+        width: 100%; }
+  .sidebarHelp .archived {
+    cursor: pointer;
+    width: 100%;
+    padding: 10px 0;
+    margin: auto;
+    display: flex;
+    text-align: center; }
+    .sidebarHelp .archived:hover {
+      background-color: #f6f6f6; }
 
 .helpContent {
-  position: fixed;
-  left: 300px;
-  overflow-y: scroll; }
+  position: absolute;
+  left: 350px; }
 
 .sideBarMain {
   position: fixed;
