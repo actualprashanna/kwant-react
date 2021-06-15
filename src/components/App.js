@@ -1,5 +1,7 @@
 import React from "react";
 import { Route, BrowserRouter } from "react-router-dom";
+
+// Pages
 import Login from "./login/Login";
 import Help from "./help/Help";
 import DashBoard from "./dashboard/Dashboard";
@@ -7,6 +9,7 @@ import OtpCheck from "../components/login/OtpCheck";
 import Signup from "./login/Signup";
 import Terms from "./terms/Terms";
 import ForgotPassword from "./login/ForgotPassword";
+import ProjectPortfolio from "./projects/ProjectPortfolio";
 
 const App = () => {
   return (
@@ -19,6 +22,7 @@ const App = () => {
       <Route path="/signup" exact component={Signup} />
       <Route path="/terms" exact component={Terms} />
       <Route path="/forgotpassword" exact component={ForgotPassword} />
+      <Route path="/projects" exact component={ProjectPortfolio} />
     </BrowserRouter>
   );
 };

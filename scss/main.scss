@@ -2,20 +2,28 @@
 @import "./login.scss";
 @import "./otpCheck.scss";
 @import "./signup.scss";
+@import "./portfolio.scss";
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+body {
+  line-height: 1.42;
+}
+
 .headerMain {
   position: fixed;
   top: 0;
+  left: 0;
   height: 7vh;
   background-color: white;
   width: 100%;
   color: white;
   display: flex;
+  flex-direction: row;
   align-items: center;
   margin: 0 5px;
   justify-content: space-between;
@@ -42,6 +50,8 @@
     .notifications {
       border-right: 1px solid #333;
       padding-right: 10px;
+      display: flex;
+      align-items: center;
 
       a {
         padding: 0.8rem;

@@ -7,9 +7,11 @@ const Header = () => {
     <div className="headerMain">
       <div className="leftSide">
         <div className="logo">
+          {/* Logo */}
           <img src={logo} alt="onTarget" style={{ height: "40px" }} />
         </div>
         <div className="pull-left select-proj" style={{ padding: "6px 12px" }}>
+          {/* Dropdown */}
           <span>
             <button className="btn btn-clear">
               <span>Select a Project</span>
@@ -20,17 +22,19 @@ const Header = () => {
       </div>
       <div className="rightSide">
         <div className="notifications">
-          <a>
+          {/* Upload */}
+          <div>
             <i className="fa fa-cloud-upload"></i>
-          </a>
+          </div>
+          {/* Tutorials */}
           <button className="btn custom-btn tutorials-btn">Tutorials</button>
         </div>
-        <div className="ui vertical inverted divider"></div>
+        {/* Profile */}
         <div className="profile">
           <button>
             Nepal Prashanna <i className="fa fa-cog cursor-pointer"></i>
             <div className="image">
-              <img src="/images/avatar2/large/kristy.png" />
+              <img src="/images/avatar2/large/kristy.png" alt="profile" />
             </div>
           </button>
         </div>
