@@ -216,11 +216,41 @@
 .headerMain {
   position: fixed;
   top: 0;
-  left: 0;
   height: 7vh;
-  background-color: blue;
+  background-color: white;
   width: 100%;
-  color: white; }
+  color: white;
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
+  justify-content: space-between; }
+  .headerMain .leftSide {
+    display: flex;
+    align-items: center; }
+    .headerMain .leftSide .logo {
+      margin-right: 30px; }
+    .headerMain .leftSide button {
+      display: flex;
+      align-items: center; }
+  .headerMain .rightSide {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; }
+    .headerMain .rightSide .notifications {
+      border-right: 1px solid #333;
+      padding-right: 10px; }
+      .headerMain .rightSide .notifications a {
+        padding: 0.8rem; }
+      .headerMain .rightSide .notifications button {
+        border-radius: 5px; }
+    .headerMain .rightSide .profile {
+      padding-left: 10px;
+      font-size: 1.5rem; }
+      .headerMain .rightSide .profile button {
+        border: none;
+        background-color: #fff;
+        display: flex;
+        align-items: center; }
 
 .sidebarHelp {
   position: fixed;
